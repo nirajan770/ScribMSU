@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ScribMSU</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="switch_control">Switch Control</string>
+    <string name="scan">Scan</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="dashboard">Commands GUI</string>
+    <string name="scan_activity">Search Bluetooth Devices</string>
+    <string name="voice_command">Voice Control</string>
+    <string name="full_screen">Image</string>
+    <string name="picture_activity">Picture</string>
+    <string name="open_file">Open</string>
+    <string name="save_file">Save</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+
+    <string-array name="control_options">
+        <item>Buttons</item>
+        <item>Phone Tilt</item>
+        <item>Voice</item>
+    </string-array>
+
+    <string name="refresh_rate_pref">refreshRatePref</string>
+    <string name="default_refresh_rate">1000</string>
+    <string name="autoRefresh_pref">autoRefreshPref</string>
+
+    <!-- Commads GUI Spinner Items -->
+    <string name="commands_prompt">Choose a command</string>
+
+    <string-array name="commands_items">
+        <item>Beep</item>
+        <item>Dance</item>
+        <item>Backward</item>
+        <item>Forward</item>
+        <item>Left</item>
+        <item>Right</item>
+    </string-array>
+
+    <string name="time_prompt">Choose amount of time</string>
+
+    <string-array name="time_items">
+        <item>1 second</item>
+        <item>2 seconds</item>
+        <item>3 seconds</item>
+        <item>4 seconds</item>
+        <item>5 seconds</item>
+    </string-array>
+
+</resources>

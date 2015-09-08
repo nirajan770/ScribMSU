@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/controller_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_default" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView_takingPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar_picture"
+        android:layout_centerInParent="true"
+        android:text="Taking Picture..."
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/takingPicture_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar_picture"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp"
+        android:text="Not Connected To Any Device. Please, Go Back And Connect To A Device"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView_picture"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/tool_bar"
+        android:layout_centerInParent="true"
+        android:layout_margin="10sp"
+        android:src="@drawable/ic_launcher"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_editPictureName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_picture"
+        android:layout_centerInParent="true"
+        android:layout_margin="10sp" >
+
+        <TextView
+            android:id="@+id/textView_pictureName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Picture Name: "
+            android:textSize="18dp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/editText_pictureName"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView_pictureName"
+            android:singleLine="true"
+            android:text=""
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_savePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout_editPictureName"
+        android:layout_centerInParent="true"
+        android:layout_margin="10sp" >
+
+        <Button
+            android:id="@+id/button_savePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button_cancelPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Nirajan/AndroidStudioProjects/ScribMSU/app/src/main/res/layout/take_picture.xml -->

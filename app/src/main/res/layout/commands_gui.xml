@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_default" />
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="Select Commands To Run"
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/commands_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:layout_margin="10dp"
+        android:entries="@array/commands_items"
+        android:prompt="@string/commands_prompt" />
+
+    <Spinner
+        android:id="@+id/time_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/commands_spinner"
+        android:layout_margin="10dp"
+        android:entries="@array/time_items"
+        android:prompt="@string/time_prompt"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="88dp"
+        android:layout_height="46dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/time_spinner"
+        android:text="ADD"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/add_button"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#3F51B5" >
+    </View>
+
+    <ListView
+        android:id="@+id/commands_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/execute_button"
+        android:layout_below="@+id/divider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/execute_button"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="EXECUTE"
+        android:textSize="18dp" />
+
+</RelativeLayout>

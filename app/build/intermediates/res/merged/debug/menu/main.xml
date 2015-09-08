@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.msu.myscribbler.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/scan"
+        android:title="@string/scan"/>
+    <item
+        android:id="@+id/disconnect"
+        android:title="@string/disconnect"/>
+    <item
+        android:id="@+id/dashboard"
+        android:title="@string/dashboard"/>
+    <item
+        android:id="@+id/open"
+        android:title="@string/open_file"/>
+    <item
+        android:id="@+id/save"
+        android:title="@string/save_file"/>
+
+</menu><!-- From: file:/C:/Users/Nirajan/AndroidStudioProjects/ScribMSU/app/src/main/res/menu/main.xml -->

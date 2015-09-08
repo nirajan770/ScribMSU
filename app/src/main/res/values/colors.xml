@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_red">#f15922</color>
+    <color name="card_content_textcolor">#444</color>
+    <color name="card_action_bg">#DDD</color>
+    <color name="card_action_item_bg">#F4F4F4</color>
+
+    <!-- Neutral Actions -->
+    <color name="card_action_focused">#FFE3F4FC</color>
+    <color name="card_action">#FF47B4EA</color>
+
+    <!-- Negative Actions -->
+    <color name="card_action_negative_focused">#FFFBCBCA</color>
+    <color name="card_action_negative">#FFF64940</color>
+
+    <!-- Positive Actions -->
+    <color name="card_action_positive_focused">#FFE4F0AF</color>
+    <color name="card_action_positive">#FFA0CC00</color>
+    <color name="swipe_color_1">#B6DB49</color>
+    <color name="swipe_color_2">#99CC00</color>
+    <color name="swipe_color_3">#8ABD00</color>
+    <color name="swipe_color_4">#7CAF00</color>
+
+    <!--
+        Check Android Theme colors for color reference:
+        https://developer.android.com/training/material/images/ThemeColors.png
+
+        Refer also to Color palette for the UI colors you should use:
+        http://www.google.com/design/spec/style/color.html#color-ui-color-palette
+    -->
+
+    <color name="myPrimaryColor">#3F51B5</color>
+    <color name="myPrimaryDarkColor">#1A237E</color>
+    <color name="myAccentColor">#3F51B5</color>
+    <color name="myDrawerBackground">#FFFFFF</color>
+    <color name="myWindowBackground">#FFFFFF</color>
+    <color name="myTextPrimaryColor">#000000</color>
+    <color name="myNavigationColor">#000000</color>
+    <color name="selected_gray">#ffdbdbdb</color>
+    
+
+</resources>
